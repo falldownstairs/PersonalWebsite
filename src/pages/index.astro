@@ -29,42 +29,55 @@ import Project from '../components/Project.astro';
 
 		<ul role="list" class="link-card-grid">
 			<Project
-				href1="https://github.com/falldownstairs/HackForYouth"
-				href2="https://hack4youth.net/"
 				title="Hack For Youth"
 				body="Hack For Youth is a high school-led hackathon for which I was the lead organizer. I designed and programmed our website from scratch."
 				picture="/projectIMG/HackForYouth.png"
-				tech= "HTML, CSS, Astro"
-				demo="demo"
+				tech= "HTML, CSS, Astro">	
+				
+				<div class = "imglinks" slot = "links">
+					<a href="https://github.com/falldownstairs/HackForYouth" target="_blank"><img class = "GH" src = "/public/GitHub.png"></a>
+					<a href="https://hack4youth.net/" target="_blank"><p class = "demo">website</p></a>
+				</div>
+			</Project>
 
-			></Project>
 			<Project
-				href1="https://github.com/falldownstairs/SquareShot"
-				href2="https://falldownstairz.itch.io/squareshot"
 				title="SquareShot"
 				body="SquareShot is a top-down roguelike game I created. It features random room generation, power-ups, various enemies, and bosses."
 				picture="/projectIMG/SquareShot.png"
-				tech= "C#, Unity"
-				demo="demo"
-			/>
+				tech= "C#, Unity">
+				<div class = "imglinks" slot = "links">
+					<a href="https://github.com/falldownstairs/SquareShot" target="_blank"><img class = "GH" src = "/public/GitHub.png"></a>
+					<a href="https://falldownstairz.itch.io/squareshot" target="_blank"><p class = "demo">demo</p></a>
+				</div>
+			</Project>
 			<Project
-				href1="https://github.com/falldownstairs/FallDetection"
-				href2=""
 				title="Fall Detection"
 				body="I created a neural network to detect falls and deployed it on a web server, allowing for fall visualization through requests to the server."
 				picture="/projectIMG/FallDetection.png"
-				tech= "python, ultralytics, requests, AWS"
-				demo=""
-			/>
+				tech= "python, ultralytics, requests, AWS">
+				<div class = "imglinks" slot = "links">
+					<a href="https://github.com/falldownstairs/FallDetection" target="_blank"><img class = "GH" src = "/public/GitHub.png"></a>
+				</div>
+			</Project>
 			<Project
-				href1="https://github.com/falldownstairs/RPG_bot"
-				href2=""
 				title="RPG Bot"
 				body="RPG Bot is a Discord bot I created using the Discord API. It is designed to function as a text-based action game that users can enjoy."
 				picture="/projectIMG/RPGBot.png"
-				tech= "python, discord API"
-				demo=""
-			/>
+				tech= "python, discord API">
+				<div class = "imglinks" slot = "links">
+					<a href="https://github.com/falldownstairs/RPG_bot" target="_blank"><img class = "GH" src = "/public/GitHub.png"></a>
+				</div>
+			</Project>
+			<Project
+				title="Self-Driving Car"
+				body="I created a self-driving car using computer vision, I designed the chasis of the car in fusion 360 and 3D-printed it."
+				picture="/projectIMG/car.png"
+				tech= "fusion360, python, opencv">
+				<div class = "imglinks" slot = "links">
+					<a href="https://github.com/falldownstairs/SelfDrivingCar" target="_blank"><img class = "GH" src = "/public/GitHub.png"></a>
+					<a href="https://www.researchgate.net/publication/387307047_Fall_Detection_Report" target="_blank"><p class = "demo">report</p></a>
+				</div>
+			</Project>
 		</ul>
 	</main>
 </Layout>
@@ -130,5 +143,29 @@ import Project from '../components/Project.astro';
 		filter: brightness(0) invert(1);
 		color: rgb(255, 255, 255);
 	}
-	
+	.GH{
+		width: 15px;
+		height: 15px;
+		filter: brightness(0) invert(1);
+		color: rgb(255, 255, 255);
+	}
+	.demo{
+		color: white;
+		text-decoration: none;
+		font-size: 10px;
+		padding-left: 7.5px;
+		-ms-transform: translateY(-25%);
+		transform: translateY(-25%);
+
+	}
+	a:hover, a:visited, a:link, a:active
+	{
+		text-decoration: none;
+	}
+	.imglinks{
+		position: relative;
+		flex-direction: row;
+  		display: flex;
+  		text-align: left;
+	}
 </style>
