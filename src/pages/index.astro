@@ -8,9 +8,8 @@ import Project from '../components/Project.astro';
 		<h1 class = "title">Eric Chen</h1>
 
 		<h1 class = "intro">
-			Hello! My name is Eric, and I am a senior in high school in Vancouver. 
-			I began programming 3 years ago, and over the years, I have developed a strong passion for computer science. 
-			I enjoy exploring new technologies and working on projects.
+			Hello! My name is Eric, and I am a senior school student in Vancouver with a passion for software development and computer science. 
+			Feel free to check out any of my projects down below!
 		</h1>
 
 		
@@ -29,16 +28,17 @@ import Project from '../components/Project.astro';
 
 		<ul role="list" class="link-card-grid">
 			<Project
-				title="Hack For Youth"
-				body="Hack For Youth is a high school-led hackathon for which I was the lead organizer. I designed and programmed our website from scratch."
-				picture="/projectIMG/HackForYouth.png"
-				tech= "HTML, CSS, Astro">	
+				title="Fridgcipe"
+				body="Fridgcipe is my first ever full stack web application, it finds recipies based on what ingredients you have in your fridge!"
+				picture="/projectIMG/fridgcipe.png"
+				tech= "React, Django, APIs">	
 				
 				<div class = "imglinks" slot = "links">
-					<a href="https://github.com/falldownstairs/HackForYouth" target="_blank"><img class = "GH" src = "/GitHub.png"></a>
-					<a href="https://hack4youth.net/" target="_blank"><p class = "demo">website</p></a>
+					<a href="https://github.com/falldownstairs/Fridgcipe" target="_blank"><img class = "GH" src = "/GitHub.png"></a>
+					<a href="https://www.youtube.com/watch?v=KMF1HaFWpH8" target="_blank"><p class = "demo">demo</p></a>
 				</div>
 			</Project>
+			
 
 			<Project
 				title="SquareShot"
@@ -50,6 +50,19 @@ import Project from '../components/Project.astro';
 					<a href="https://falldownstairz.itch.io/squareshot" target="_blank"><p class = "demo">demo</p></a>
 				</div>
 			</Project>
+
+			<Project
+				title="Hack For Youth"
+				body="Hack For Youth is a high school-led hackathon for which I was the lead organizer. I designed and programmed our website from scratch."
+				picture="/projectIMG/HackForYouth.png"
+				tech= "HTML, CSS, Astro">	
+				
+				<div class = "imglinks" slot = "links">
+					<a href="https://github.com/falldownstairs/HackForYouth" target="_blank"><img class = "GH" src = "/GitHub.png"></a>
+					<a href="https://hack4youth.net/" target="_blank"><p class = "demo">website</p></a>
+				</div>
+			</Project>
+
 			<Project
 				title="Fall Detection"
 				body="I created a neural network to detect falls and deployed it on a web server, allowing for fall visualization through requests to the server."
