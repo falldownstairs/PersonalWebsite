@@ -23,6 +23,19 @@ import Project from '../components/Project.astro';
 		</h1>
 
 		<ul role="list" class="link-card-grid">
+
+			<Project
+				title="Genimo"
+				body="I created Genimo along with two very talented teammates at nwhacks 2025, it is a web application which generates 3blue1brown style animations from users using google google gemini."
+				picture="/projectIMG/Genimo.png"
+				tech= "React, Django, APIs">	
+				
+				<div class = "imglinks" slot = "links">
+					<a href="https://github.com/falldownstairs/Genimo" target="_blank"><img class = "GH" src = "/GitHub.png"></a>
+					<a href="https://devpost.com/software/genimo" target="_blank"><p class = "demo">devpost</p></a>
+				</div>
+			</Project>
+
 			<Project
 				title="Fridgcipe"
 				body="Fridgcipe is my first ever full stack web application, it finds recipies based on what ingredients you have in your fridge!"
